@@ -23,7 +23,12 @@
       <script>
         var socket = io();
           $('form').submit(function(){
-              socket.emit('chat message', $('#m').val());
+              var message = $('#m').val();
+              var userName = 'Rocco'
+              socket.emit('chat message', {
+                'userName': userName,
+                'content': message
+              });
               $('#m').val('');
                 return false;
           });
