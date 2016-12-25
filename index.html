@@ -25,10 +25,10 @@
         var socket = io();
           $('form').submit(function(){
               var message = $('#m').val();
-              if(message.substring(0, 12) == '#setUsername'){
-                  userName = message.split(' ')[1];
+              if (message.substring(0, 12) == '#setUsername') {
+                  userName = message.split(' ')[1].trim();
               }
-              else{
+              else {
                   socket.emit('chat message', {
                     'userName': userName,
                     'content': message
