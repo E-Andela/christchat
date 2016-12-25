@@ -1,0 +1,15 @@
+{
+  "name": "christchat",
+  "version": "1.0.0",
+  "description": "Our first chat program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rocco & Elroy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.7.2"
+  }
+}
